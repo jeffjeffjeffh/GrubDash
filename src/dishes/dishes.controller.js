@@ -199,6 +199,8 @@ module.exports = {
   ],
   read: [dishExists, read],
   update: [
+    dishExists,
+    dishIdMatches,
     hasName,
     hasValidName,
     hasDescription,
@@ -208,8 +210,6 @@ module.exports = {
     hasValidPrice,
     hasImage,
     hasValidImage,
-    dishExists,
-    dishIdMatches,
     update,
   ],
 };

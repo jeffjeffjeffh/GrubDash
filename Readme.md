@@ -10,6 +10,8 @@ Validation is performed on POST, PUT, and DELETE operations to ensure the integr
 
 All dishes are accessible via /dishes, and individual dishes are accessible via /dishes/:dishId. A dish can be created and updated, but _not_ deleted.
 
+---
+
 Getting a list of dishes:
 
 ```
@@ -48,6 +50,8 @@ Output:
 ]
 ```
 
+---
+
 Creating a dish:
 
 ```
@@ -77,6 +81,8 @@ Output:
   }
 ```
 
+---
+
 Getting a specific dish:
 
 ```
@@ -96,6 +102,8 @@ Output:
         "https://images.pexels.com/photos/1279330/pexels-photo-1279330.jpeg?h=530&w=350",
     }
 ```
+
+---
 
 Updating a dish:
 
@@ -133,6 +141,8 @@ All orders are accessible via /orders, and individual orders are assessible via 
 
 _Note_: that an order can no longer be deleted once its status has been set to _delivered_,
 and an order that does not have a status of _pending_ cannot be deleted.
+
+---
 
 Getting a list of orders:
 
@@ -181,6 +191,8 @@ Output:
   },
 ]
 ```
+
+---
 
 Creating an order:
 
@@ -232,6 +244,8 @@ Output:
   }
 ```
 
+---
+
 Getting a specific order:
 
 ```
@@ -259,6 +273,8 @@ Output:
     ],
   }
 ```
+
+---
 
 Updating an order:
 
@@ -309,6 +325,8 @@ Output:
     ],
   }
 ```
+
+---
 
 Deleting an order:
 

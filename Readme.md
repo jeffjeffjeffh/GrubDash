@@ -6,6 +6,8 @@ Routes support GET, POST, PUT, DELETE operations. Other operations are not allow
 
 Validation is performed on POST, PUT, and DELETE operations to ensure the integrity of the data.+
 
+---
+
 ### Dishes
 
 All dishes are accessible via /dishes, and individual dishes are accessible via /dishes/:dishId. A dish can be created and updated, but _not_ deleted.
@@ -134,6 +136,8 @@ Output:
     image_url: "https://images.pexels.com/photos/4144234/pexels-photo-4144234.jpeg?h=530&w=350",
   }
 ```
+
+---
 
 ### Orders
 

@@ -226,6 +226,7 @@ function list(req, res) {
 }
 
 function create(req, res) {
+  // Only grabbing the information needed so we don't add extraneous data
   const { id, deliverTo, mobileNumber, status, dishes } = req.body.data;
   const newId = nextId();
   const newOrder = { id, deliverTo, mobileNumber, status, dishes, id: newId };
@@ -240,6 +241,7 @@ function read(req, res) {
 
 function update(req, res) {
   const pathOrderId = req.params.orderId;
+  // Only grabbing the information needed so we don't add extraneous data
   const { id, deliverTo, mobileNumber, status, dishes } = req.body.data;
   const index = orders.findIndex((order) => order.id === pathOrderId);
   let orderToUpdate = orders[index];

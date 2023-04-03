@@ -153,6 +153,7 @@ function list(req, res) {
 }
 
 function create(req, res) {
+  // Only grabbing the information needed so we don't add extraneous data
   const { name, description, price, image_url } = req.body.data;
   const id = nextId();
   const newDish = {
@@ -173,6 +174,7 @@ function read(req, res) {
 
 function update(req, res) {
   const oldDish = res.locals.dish;
+  // Only grabbing the information needed so we don't add extraneous data
   const { name, description, price, image_url, id } = req.body.data;
   const dishIndex = dishes.findIndex((dish) => dish.id === oldDish.id);
   dishes[dishIndex] = { ...oldDish, name, description, price, image_url };
